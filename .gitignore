@@ -1,0 +1,20 @@
+# Kompilierte Programme / Build-Artefakte
+*.o
+*.out
+*.bin
+a.out
+
+# Binaries ohne Endung (kompilierte Beispiele heissen wie die .cpp ohne .cpp)
+01_raii_und_smartpointer
+02_move_semantik
+03_undefined_behavior
+04_threads_mutex_deadlock
+05_producer_consumer
+06_prozesse_und_ipc
+07_video_frames_gop
+08_rtp_jitter_buffer
+09_motion_detection
+
+# Editor / OS
+.vscode/
+.DS_Store
