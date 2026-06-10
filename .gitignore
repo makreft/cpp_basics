@@ -15,6 +15,17 @@ a.out
 08_rtp_jitter_buffer
 09_motion_detection
 
+# Fuzzing-Artefakte (gebaute Binaries + vom Fuzzer erzeugte Crash-Inputs)
+fuzzing/repro_vuln
+fuzzing/repro_safe
+fuzzing/fuzz_vuln
+fuzzing/fuzz_safe
+fuzzing/crash-*
+fuzzing/leak-*
+fuzzing/timeout-*
+fuzzing/oom-*
+fuzzing/*.profraw
+
 # Editor / OS
 .vscode/
 .DS_Store

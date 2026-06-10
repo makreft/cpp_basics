@@ -32,6 +32,14 @@ g++ -std=c++17 -g -O0 -Wall -Wextra -pthread DATEI.cpp -o programm && ./programm
 | `08_rtp_jitter_buffer.cpp` | RTP-Sequenznummern, Re-Ordering, Verlust |
 | `09_motion_detection.cpp` | Frame-Differencing (Bewegungserkennung) |
 
+## Bonus: Fuzzing-Demo (`fuzzing/`)
+
+Ein Mini-RTP-Parser mit einem realistischen „Längenfeld blind vertrauen"-Bug,
+einer libFuzzer-Harness und einer abgesicherten Variante – der Buffer Overflow
+wird mit dem AddressSanitizer sichtbar gemacht. Funktioniert sofort per g++/ASan
+(Standalone-Treiber), echtes coverage-guided Fuzzing per clang/libFuzzer.
+Details in [`fuzzing/README.md`](fuzzing/README.md).
+
 ## Extra-Tipp: Fehler sichtbar machen
 
 `03_undefined_behavior.cpp` führt absichtlich **kein** UB aus. Wenn du eine der
